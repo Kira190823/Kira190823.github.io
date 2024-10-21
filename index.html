@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 20/10</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+        body {
+            font-family: 'Dancing Script', cursive;
+            background-color: #fff0f5;
+            text-align: center;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            color: #e74c3c;
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            font-size: 28px;
+            color: #8e44ad;
+            margin-bottom: 40px;
+        }
+
+        a {
+            padding: 12px 25px;
+            font-size: 20px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block; /* Để nó hiển thị như một nút */
+        }
+
+        a:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 350px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Trái tim động */
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            margin: 50px auto;
+            transform: rotate(-45deg);
+            animation: beat 1s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "Iu Du tồy";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 50px;
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.1) rotate(-45deg);
+            }
+            100% {
+                transform: scale(1) rotate(-45deg);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chúc mừng 20/10!</h1>
+        <p>Gửi đến em yêu những lời chúc ngọt ngào nhất trong ngày đặc biệt !</p>
+        <img src="/Website/images/kin ôm tay.jpg" alt="Kin ôm iêm nè :333 " />
+        <p>Cảm ơn em vì đã luôn là ánh sáng trong cuộc đời anh. Chúc em luôn vui vẻ và xinh đẹp như bông hoa này!</p>
+        
+        <!-- Thay button bằng thẻ a -->
+        <a href="/Website/Blossoming Flowers at Magical Night/flower.html" target="_self">Click để nhận yêu thương</a>
+    </div>
+
+    <!-- Trái tim động -->
+    <div class="heart"></div>
+</body>
+</html>
